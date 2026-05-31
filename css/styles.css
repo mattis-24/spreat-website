@@ -10,9 +10,8 @@
   section{position:relative}
   img{max-width:100%;display:block}
 
-  [data-en]{display:none}
-  body.en [data-de]{display:none}
-  body.en [data-en]{display:revert}
+  body:not(.en) [data-en]{display:none !important}
+  body.en [data-de]{display:none !important}
 
   header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.85);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
   header.scrolled{border-bottom:1px solid var(--navy-soft);box-shadow:0 4px 30px rgba(20,20,43,0.04)}
@@ -115,6 +114,9 @@
   .strip .lbl{font-size:13px;color:var(--grey);font-weight:500}
   .strip .brand{font-weight:700;font-size:20px;color:var(--navy);opacity:.5;letter-spacing:-.5px;transition:opacity .2s}
   .strip .brand:hover{opacity:.85}
+  .strip .brand-logo{display:inline-flex;align-items:center;height:34px;opacity:.85}
+  .strip .brand-logo:hover{opacity:1}
+  .strip .brand-logo img{height:100%;width:auto;display:block}
 
   .sec{padding:100px 0}
   .sec-tag{font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--green);margin-bottom:14px}
