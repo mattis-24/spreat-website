@@ -45,7 +45,8 @@
   @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
   .hero h1{font-size:clamp(40px,5.4vw,66px);font-weight:900;line-height:1.03;letter-spacing:-2px}
   .hero h1 .accent{color:var(--green)}
-  .hero .sub{font-size:clamp(17px,2vw,20px);color:var(--grey);margin:26px 0 36px;max-width:520px;line-height:1.55}
+  .hero-subline{font-size:clamp(15px,1.6vw,18px);color:var(--navy);font-weight:600;margin-top:18px;letter-spacing:-.2px}
+  .hero .sub{font-size:clamp(17px,2vw,20px);color:var(--grey);margin:14px 0 36px;max-width:540px;line-height:1.55}
   .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
   .hero-visual{position:relative}
   .hero-card{background:var(--navy);border-radius:24px;padding:38px;color:var(--white);box-shadow:0 30px 70px rgba(20,20,43,0.22);position:relative;overflow:hidden}
