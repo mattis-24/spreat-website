@@ -14,7 +14,7 @@
 
 <header id="hdr">
   <div class="wrap nav">
-    <a class="logo" data-nav="home"><img src="https://cdn.prod.website-files.com/6675b8a846c2cbec25f829cb/6675cb10048c54618b55d8df_Logo_Spreat_SVG_3920px.svg" alt="Spreat"></a>
+    <a class="logo" data-nav="home"><img src="assets/img/spreat-logo.svg" alt="Spreat"></a>
     <ul class="nav-links" id="navlinks">
       <li><a data-nav="home" class="active">Home</a></li>
       <li><a data-nav="stores"><span data-de>Einzelhändler</span><span data-en>Stores</span></a></li>
@@ -56,17 +56,32 @@
   </section>
 
   <section class="strip">
-    <div class="wrap strip-inner reveal">
-      <span class="lbl" data-de>Bereits im Einsatz bei</span><span class="lbl" data-en>Already in use at</span>
-      <span class="brand brand-logo"><img src="assets/img/logos/freenet.png" alt="Freenet" loading="lazy"></span>
-      <span class="brand brand-logo"><img src="assets/img/logos/viertelladen.svg" alt="Viertelladen" loading="lazy"></span>
-      <span class="brand brand-logo"><img src="assets/img/logos/inkster.svg" alt="Inkster" loading="lazy"></span>
-      <span class="brand brand-logo"><img src="assets/img/logos/tado.svg" alt="tado" loading="lazy"></span>
-      <span class="brand brand-logo"><img src="assets/img/logos/pwrgum.svg" alt="pwr gum" loading="lazy"></span>
-      <span class="brand brand-logo"><img src="assets/img/logos/good-news.svg" alt="Good News Magazin" loading="lazy"></span>
-      <span class="brand brand-logo"><img src="assets/img/logos/heiderinder.png" alt="Heiderinder" loading="lazy"></span>
-      <span class="brand brand-logo"><img src="assets/img/logos/stadt-rhede.png" alt="Stadt Rhede" loading="lazy"></span>
-      <span class="brand"><span data-de>+ 100 Unternehmen</span><span data-en>+ 100 companies</span></span>
+    <div class="wrap">
+      <div class="strip-label reveal">
+        <span class="lbl" data-de>Bereits im Einsatz bei <b>100+ Unternehmen</b></span>
+        <span class="lbl" data-en>Already in use at <b>100+ companies</b></span>
+      </div>
+    </div>
+    <div class="strip-marquee">
+      <div class="strip-track">
+        <span class="brand brand-logo"><img src="assets/img/logos/freenet.png" alt="Freenet" loading="lazy"></span>
+        <span class="brand brand-logo"><img src="assets/img/logos/viertelladen.svg" alt="Viertelladen" loading="lazy"></span>
+        <span class="brand brand-logo"><img src="assets/img/logos/inkster.svg" alt="Inkster" loading="lazy"></span>
+        <span class="brand brand-logo"><img src="assets/img/logos/tado.svg" alt="tado" loading="lazy"></span>
+        <span class="brand brand-logo"><img src="assets/img/logos/pwrgum.svg" alt="pwr gum" loading="lazy"></span>
+        <span class="brand brand-logo"><img src="assets/img/logos/good-news.svg" alt="Good News Magazin" loading="lazy"></span>
+        <span class="brand brand-logo"><img src="assets/img/logos/heiderinder.png" alt="Heiderinder" loading="lazy"></span>
+        <span class="brand brand-logo"><img src="assets/img/logos/stadt-rhede.png" alt="Stadt Rhede" loading="lazy"></span>
+        <!-- Duplicate for seamless loop -->
+        <span class="brand brand-logo" aria-hidden="true"><img src="assets/img/logos/freenet.png" alt="" loading="lazy"></span>
+        <span class="brand brand-logo" aria-hidden="true"><img src="assets/img/logos/viertelladen.svg" alt="" loading="lazy"></span>
+        <span class="brand brand-logo" aria-hidden="true"><img src="assets/img/logos/inkster.svg" alt="" loading="lazy"></span>
+        <span class="brand brand-logo" aria-hidden="true"><img src="assets/img/logos/tado.svg" alt="" loading="lazy"></span>
+        <span class="brand brand-logo" aria-hidden="true"><img src="assets/img/logos/pwrgum.svg" alt="" loading="lazy"></span>
+        <span class="brand brand-logo" aria-hidden="true"><img src="assets/img/logos/good-news.svg" alt="" loading="lazy"></span>
+        <span class="brand brand-logo" aria-hidden="true"><img src="assets/img/logos/heiderinder.png" alt="" loading="lazy"></span>
+        <span class="brand brand-logo" aria-hidden="true"><img src="assets/img/logos/stadt-rhede.png" alt="" loading="lazy"></span>
+      </div>
     </div>
   </section>
 
@@ -208,7 +223,7 @@
         <div class="ref reveal case-open" data-case="viertelladen">
           <div class="ref-media">
             <div class="ref-tag video">▶ Video</div>
-            <video src="assets/viertelladen-web.mp4" loop muted playsinline preload="metadata" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"></video>
+            <video src="assets/viertelladen-web.mp4" autoplay loop muted playsinline preload="auto" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"></video>
             <div class="ref-ph" style="display:none;position:absolute;inset:0"><div class="pic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div><div class="note" data-de>Video lädt nur mit assets-Ordner oder online</div><div class="note" data-en>Video loads only with assets folder or online</div></div>
           </div>
           <div class="ref-body"><h3>Viertelladen <span class="ref-more">›</span></h3><p data-de>Inhabergeführter Concept-Store, der seine Produzenten und Künstler ohne Aufwand über Spreat anbindet</p><p data-en>Owner-led concept store onboarding its producers and artists effortlessly via Spreat</p></div>
@@ -324,15 +339,15 @@
       <div class="center reveal"><div class="sec-tag" data-de>Rechne es durch</div><div class="sec-tag" data-en>Run the numbers</div><h2 style="margin:0 auto"><span data-de>Was Spreat für deine Fläche bedeutet.</span><span data-en>What Spreat means for your floor.</span></h2><p class="lead" style="margin:18px auto 0"><span data-de>Schieb die Regler und sieh, wie viel Kapital frei wird und was als Provision hängen bleibt.</span><span data-en>Move the sliders and see how much capital frees up and what you earn in commission.</span></p></div>
       <div class="roi-box reveal">
         <div class="roi-inputs">
-          <h3><span data-de>Deine Eckdaten</span><span data-en>Your inputs</span></h3>
+          <h3><span data-de>Dein Spreat Rentabilitätsrechner</span><span data-en>Your Spreat profitability calculator</span></h3>
           <div class="hint"><span data-de>Grobe Schätzwerte genügen.</span><span data-en>Rough estimates are fine.</span></div>
           <div class="roi-field">
-            <label><span><span data-de>Spreat-Sortiment auf deiner Fläche</span><span data-en>Spreat assortment on your floor</span></span><span class="val"><span id="v-stock">10.000</span> €</span></label>
-            <input type="range" id="r-stock" min="2000" max="80000" step="1000" value="10000">
+            <label><span><span data-de>Aktueller Warenwert auf deiner Fläche</span><span data-en>Current stock value on your floor</span></span><span class="val"><span id="v-stock">100.000</span> €</span></label>
+            <input type="range" id="r-stock" min="10000" max="10000000" step="10000" value="100000">
           </div>
           <div class="roi-field">
-            <label><span><span data-de>Erwarteter Monatsumsatz über Spreat</span><span data-en>Expected monthly revenue via Spreat</span></span><span class="val"><span id="v-rev">6.000</span> €</span></label>
-            <input type="range" id="r-rev" min="1000" max="50000" step="500" value="6000">
+            <label><span><span data-de>Durchschnittlicher Umsatz auf deiner Fläche</span><span data-en>Average revenue on your floor</span></span><span class="val"><span id="v-rev">50.000</span> €</span></label>
+            <input type="range" id="r-rev" min="5000" max="5000000" step="5000" value="50000">
           </div>
           <div class="roi-field">
             <label><span><span data-de>Deine Ladenprovision pro Verkauf</span><span data-en>Your store commission per sale</span></span><span class="val"><span id="v-marg">35</span>%</span></label>
@@ -341,11 +356,9 @@
         </div>
         <div class="roi-out">
           <div class="ro-lbl"><span data-de>Freigesetztes Kapital (statt Wareneinkauf)</span><span data-en>Capital freed up (vs. buying stock)</span></div>
-          <div class="ro-big"><span id="o-capital">10.000</span> €</div>
+          <div class="ro-big"><span id="o-capital">100.000</span> €</div>
           <div class="ro-sub"><span data-de>bleibt in deiner Kasse, nicht im Regal</span><span data-en>stays in your account, not on the shelf</span></div>
-          <div class="ro-row"><span><span data-de>Deine Provision / Monat</span><span data-en>Your commission / month</span></span><span><span id="o-margin">2.100</span> €</span></div>
-          <div class="ro-row"><span><span data-de>Spreat-Gebühr (2%)</span><span data-en>Spreat fee (2%)</span></span><span><span id="o-fee">120</span> €</span></div>
-          <div class="ro-row"><span><span data-de>Netto für dich / Monat</span><span data-en>Net for you / month</span></span><span style="color:var(--green)"><span id="o-net">1.980</span> €</span></div>
+          <div class="ro-row"><span><span data-de>Deine Provision / Monat</span><span data-en>Your commission / month</span></span><span style="color:var(--green)"><span id="o-margin">17.500</span> €</span></div>
           <div class="roi-disc"><span data-de>Vereinfachte Beispielrechnung, keine Zusicherung. Tatsächliche Werte hängen von Sortiment, Lage und Provision ab.</span><span data-en>Simplified example, not a guarantee. Actual figures depend on assortment, location and commission.</span></div>
         </div>
       </div>
@@ -541,7 +554,7 @@
         <div class="testi reveal" style="transition-delay:.1s">
           <div class="quote" data-de>„Mit Spreat kann ich in Echtzeit all meine Verkäufe sehen und es hat fast süchtig gemacht, mehrfach am Tag ins System reinzuschauen."</div>
           <div class="quote" data-en>"With Spreat I can see all my sales in real time, it almost got addictive to check the system several times a day."</div>
-          <div class="who"><img class="av" src="https://onecdn.io/media/fcca1e8e-f5df-4e2f-903f-202bb175cbfd/preview" alt="Petra Dings"><div><div class="nm">Petra Dings</div><div class="br" data-de>Gründerin von Papier Dings</div><div class="br" data-en>Founder of Papier Dings</div></div></div>
+          <div class="who"><img class="av" src="assets/img/petra.jpg" alt="Petra Dings"><div><div class="nm">Petra Dings</div><div class="br" data-de>Gründerin von Papier Dings</div><div class="br" data-en>Founder of Papier Dings</div></div></div>
         </div>
         <div class="testi reveal" style="transition-delay:.2s">
           <div class="quote" data-de>„Spreat hat meiner Marke den Einstieg in die Einzelhandelsregale sehr erleichtert. So schnell und einfach wie mit Spreat war Einzelhandelsvertrieb noch nie."</div>
@@ -604,11 +617,11 @@
         <div class="founder reveal">
           <div class="f-photo"><img src="https://cdn.prod.website-files.com/69370f2f7bc3196ca1fc4879/696516fc628372ce4025ed39_Heinz-Peter%20H%C3%B6lscher.avif" alt="Heinz-Peter Hölscher" loading="lazy"></div>
           <div class="f-info">
-            <div class="f-role" data-de>Business Development · Operative Exzellenz</div><div class="f-role" data-en>Business Development · Operational Excellence</div>
+            <div class="f-role" data-de>Brand Lead · Markenpool & Partnerships</div><div class="f-role" data-en>Brand Lead · Brand Pool & Partnerships</div>
             <h3>Heinz-Peter Hölscher</h3>
-            <p data-de>Heinz-Peter bringt jahrzehntelange Erfahrung aus dem Einzelhandel und der Geschäftsentwicklung mit zu Spreat. Sein tiefes Verständnis für die operativen Realitäten des stationären Handels macht ihn zum Bindeglied zwischen Spreat und den Filialnetzen unserer Partner.</p>
-            <p data-en>Heinz-Peter brings decades of retail and business-development experience to Spreat. His deep understanding of the operational reality of physical retail makes him the bridge between Spreat and our partners' store networks.</p>
-            <div class="f-badge"><span class="tr">★</span> <span data-de>Brücke zwischen Spreat und Handel</span><span data-en>Bridge between Spreat and retail</span></div>
+            <p data-de>Nach seinem Studium in Münster und seinem ersten IronMan hat Heinz-Peter seine eigene E-Commerce-Brand aufgebaut und erfolgreich skaliert. Ein echter Weltenbummler — mal ein paar Monate in Shenzhen, dann wieder im Silicon Valley unterwegs. Bei Spreat kümmert er sich komplett um die Marken und den Markenpool.</p>
+            <p data-en>After studying in Münster and finishing his first IronMan, Heinz-Peter built and successfully scaled his own e-commerce brand. A real globetrotter — a few months in Shenzhen, then back to Silicon Valley. At Spreat, he runs everything around brands and the brand pool.</p>
+            <div class="f-badge"><span class="tr">★</span> <span data-de>E-Commerce-Brand erfolgreich skaliert</span><span data-en>Scaled own e-commerce brand</span></div>
             <div class="f-links"><a href="mailto:heinz-peter@spreat.com">E-Mail</a><a href="https://www.linkedin.com/in/heinz-peter-h%C3%B6lscher" target="_blank">LinkedIn</a></div>
           </div>
         </div>
@@ -667,18 +680,15 @@
       <p data-en>The owners keep full control over assortment and margins. Spreat handles ordering, invoicing and commission payouts in the background.</p>
     </div>
   </div>
-  <div data-case-id="freenet">
-    <div class="case-hero" data-bg="assets/freenet-creator.jpg" data-bg-position="top"></div>
+  <div data-case-id="freenet" data-case-layout="full-image">
+    <div class="case-fullimg"><img src="assets/freenet-creator.jpg" alt="Freenet Creator Picks Wand"></div>
     <div class="case-body">
       <span class="case-eyebrow" data-de>Franchise-Netzwerk · 400 Filialen</span><span class="case-eyebrow" data-en>Franchise network · 400 stores</span>
       <h3>Freenet — Creator Picks</h3>
-      <p data-de>freenet hat über Spreat eine Creator-Picks-Fläche im Franchise-Netz ausgerollt. Virale Trendprodukte verschiedener Marken werden sichtbar am POS platziert — ohne dass die Filialen das Sortiment einkaufen müssen.</p>
-      <p data-en>freenet rolled out a Creator Picks space across its franchise network via Spreat. Viral trend products from various brands sit visibly at the POS — without the stores having to buy any stock.</p>
-      <ul class="case-kpis">
-        <li><b data-de>~ 400</b><b data-en>~ 400</b><span data-de>Filialen live</span><span data-en>stores live</span></li>
-        <li><b data-de>0 €</b><b data-en>0 €</b><span data-de>Wareneinkauf für Filialen</span><span data-en>buying cost for stores</span></li>
-        <li><b data-de>1 System</b><b data-en>1 system</b><span data-de>für alle Marken</span><span data-en>for all brands</span></li>
-      </ul>
+      <p data-de>freenet hat über Spreat eine Creator-Picks-Fläche im Franchise-Netz ausgerollt. Auf der Wand stehen virale Trendprodukte verschiedener Marken — direkt sichtbar am POS, ohne dass die Filialen das Sortiment vorfinanzieren müssen.</p>
+      <p data-en>freenet rolled out a Creator Picks space across its franchise network via Spreat. Viral trend products from various brands sit visibly at the POS — without the stores having to pre-finance any stock.</p>
+      <p data-de>Die Creator-Picks-Produkte wirken als zusätzlicher Leadmagnet: Sie ziehen eine jüngere, trend-affine Zielgruppe in die Filialen, die freenet sonst nur schwer erreicht. Die zusätzliche Frequenz erhöht die Verweildauer im Laden — und damit messbar die Cross-Selling-Quote auf das eigentliche freenet-Kerngeschäft (Mobilfunk, Tarife, Geräte).</p>
+      <p data-en>The Creator Picks products act as an additional lead magnet: they pull a younger, trend-savvy audience into the stores that freenet otherwise struggles to reach. The added foot traffic increases dwell time — and measurably lifts cross-selling onto freenet's core business (mobile, tariffs, devices).</p>
       <p data-de>Spreat verbindet alle teilnehmenden Marken mit dem Filialnetz und übernimmt die komplette Abwicklung pro Verkauf — von der Order über die Rechnung bis zur Auszahlung.</p>
       <p data-en>Spreat connects all participating brands with the store network and handles the entire processing per sale — from order to invoice to payout.</p>
     </div>
@@ -740,7 +750,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <img src="https://cdn.prod.website-files.com/6675b8a846c2cbec25f829cb/6675cb10048c54618b55d8df_Logo_Spreat_SVG_3920px.svg" alt="Spreat">
+        <img src="assets/img/spreat-logo-white.svg" alt="Spreat">
         <p data-de>Die Commerce Engine für den stationären Handel. We do marketplaces for physical stores.</p>
         <p data-en>The commerce engine for physical retail. We do marketplaces for physical stores.</p>
       </div>

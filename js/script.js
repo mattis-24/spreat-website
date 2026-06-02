@@ -45,12 +45,8 @@ const hdr=document.getElementById('hdr');
     document.getElementById('v-rev').textContent=fmt(rev);
     document.getElementById('v-marg').textContent=marg;
     const margin=rev*marg/100;
-    const fee=rev*0.02;
-    const net=margin-fee;
     document.getElementById('o-capital').textContent=fmt(stock);
     document.getElementById('o-margin').textContent=fmt(margin);
-    document.getElementById('o-fee').textContent=fmt(fee);
-    document.getElementById('o-net').textContent=fmt(net);
   }
   ['r-stock','r-rev','r-marg'].forEach(id=>{const el=document.getElementById(id);if(el)el.addEventListener('input',calcROI)});
   if(document.getElementById('r-stock'))calcROI();
@@ -93,7 +89,10 @@ const hdr=document.getElementById('hdr');
     const src=document.querySelector('#case-data > div[data-case-id="'+id+'"]');
     if(!src)return;
     caseDetailContent.innerHTML=src.innerHTML;
-    // apply hero background
+    // toggle layout class on modal box
+    const box=caseModal.querySelector('.case-modal-box');
+    box.classList.toggle('case-modal-full',src.dataset.caseLayout==='full-image');
+    // apply hero background (for non-full layouts)
     const hero=caseDetailContent.querySelector('.case-hero');
     if(hero&&hero.dataset.bg){
       hero.style.backgroundImage='url('+hero.dataset.bg+')';
