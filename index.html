@@ -43,11 +43,11 @@
         </div>
       </div>
       <div class="hero-visual reveal" style="transition-delay:.15s">
-        <div class="hero-photo">
-          <img src="assets/img/concept-store.jpg" alt="Concept Store">
+        <div class="hero-platform">
+          <div class="hp-shot"><img src="assets/dashboard-umsatz.png" alt="Spreat Plattform Dashboard"></div>
           <div class="ov">
-            <div class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l1-5h16l1 5M4 9v11h16V9M4 9h16M9 13h6"/></svg></div>
-            <div><div class="t" data-de>Kuratiertes Sortiment, null Einkauf</div><div class="t" data-en>Curated assortment, zero buying</div><div class="d" data-de>Live in echten Läden</div><div class="d" data-en>Live in real stores</div></div>
+            <div class="ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3v18h18M7 14l4-4 4 4 6-6"/></svg></div>
+            <div><div class="t" data-de>Echtzeit-Insights pro Marke</div><div class="t" data-en>Real-time insights per brand</div><div class="d" data-de>Live aus echten Läden</div><div class="d" data-en>Live from real stores</div></div>
           </div>
         </div>
         <div class="hero-badge"><div class="big">0 €</div><div class="sm"><span data-de>gebundenes Kapital im Sortiment</span><span data-en>capital tied up in stock</span></div></div>
@@ -157,7 +157,7 @@
           <div class="ref-body"><h3>Viertelladen</h3><p data-de>Inhabergeführter Concept-Store, der seine Produzenten und Künstler ohne Aufwand über Spreat anbindet</p><p data-en>Owner-led concept store onboarding its producers and artists effortlessly via Spreat</p></div>
         </div>
         <div class="ref reveal" style="transition-delay:.1s">
-          <div class="ref-media">
+          <div class="ref-media ref-media-contain">
             <div class="ref-tag">Case</div>
             <img src="assets/freenet-creator.jpg" alt="Freenet Creator Picks">
           </div>
@@ -270,15 +270,15 @@
           <h3><span data-de>Deine Eckdaten</span><span data-en>Your inputs</span></h3>
           <div class="hint"><span data-de>Grobe Schätzwerte genügen.</span><span data-en>Rough estimates are fine.</span></div>
           <div class="roi-field">
-            <label><span><span data-de>Sortiment auf Spreat-Fläche</span><span data-en>Assortment on Spreat space</span></span><span class="val"><span id="v-stock">10.000</span> €</span></label>
+            <label><span><span data-de>Spreat-Sortiment auf deiner Fläche</span><span data-en>Spreat assortment on your floor</span></span><span class="val"><span id="v-stock">10.000</span> €</span></label>
             <input type="range" id="r-stock" min="2000" max="80000" step="1000" value="10000">
           </div>
           <div class="roi-field">
-            <label><span><span data-de>Erwarteter Monatsumsatz darüber</span><span data-en>Expected monthly revenue from it</span></span><span class="val"><span id="v-rev">6.000</span> €</span></label>
+            <label><span><span data-de>Erwarteter Monatsumsatz über Spreat</span><span data-en>Expected monthly revenue via Spreat</span></span><span class="val"><span id="v-rev">6.000</span> €</span></label>
             <input type="range" id="r-rev" min="1000" max="50000" step="500" value="6000">
           </div>
           <div class="roi-field">
-            <label><span><span data-de>Deine Provision pro Verkauf</span><span data-en>Your commission per sale</span></span><span class="val"><span id="v-marg">35</span>%</span></label>
+            <label><span><span data-de>Deine Ladenprovision pro Verkauf</span><span data-en>Your store commission per sale</span></span><span class="val"><span id="v-marg">35</span>%</span></label>
             <input type="range" id="r-marg" min="10" max="60" step="1" value="35">
           </div>
         </div>
