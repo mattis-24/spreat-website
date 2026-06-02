@@ -89,9 +89,11 @@ const hdr=document.getElementById('hdr');
     const src=document.querySelector('#case-data > div[data-case-id="'+id+'"]');
     if(!src)return;
     caseDetailContent.innerHTML=src.innerHTML;
-    // toggle layout class on modal box
+    // toggle layout class on modal box (wider when full-image or full-video)
     const box=caseModal.querySelector('.case-modal-box');
-    box.classList.toggle('case-modal-full',src.dataset.caseLayout==='full-image');
+    const layout=src.dataset.caseLayout||'';
+    box.classList.toggle('case-modal-full',layout==='full-image'||layout==='full-video');
+    box.scrollTop=0;
     // apply hero background (for non-full layouts)
     const hero=caseDetailContent.querySelector('.case-hero');
     if(hero&&hero.dataset.bg){
@@ -100,7 +102,11 @@ const hdr=document.getElementById('hdr');
     }
     caseModal.classList.add('open');document.body.style.overflow='hidden';
   }
-  function closeCase(){caseModal.classList.remove('open');document.body.style.overflow=''}
+  function closeCase(){
+    // pause any video in the modal
+    caseDetailContent.querySelectorAll('video').forEach(v=>{try{v.pause()}catch(e){}});
+    caseModal.classList.remove('open');document.body.style.overflow='';
+  }
   document.addEventListener('click',e=>{
     const card=e.target.closest('.case-open');
     if(card){e.preventDefault();openCase(card.dataset.case);return}
