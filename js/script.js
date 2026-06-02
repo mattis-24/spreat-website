@@ -86,4 +86,27 @@ const hdr=document.getElementById('hdr');
     document.getElementById('bp-success').classList.add('show');
   });
 
+  // Case detail modal
+  const caseModal=document.getElementById('case-modal');
+  const caseDetailContent=document.getElementById('case-detail-content');
+  function openCase(id){
+    const src=document.querySelector('#case-data > div[data-case-id="'+id+'"]');
+    if(!src)return;
+    caseDetailContent.innerHTML=src.innerHTML;
+    // apply hero background
+    const hero=caseDetailContent.querySelector('.case-hero');
+    if(hero&&hero.dataset.bg){
+      hero.style.backgroundImage='url('+hero.dataset.bg+')';
+      if(hero.dataset.bgPosition)hero.style.backgroundPosition=hero.dataset.bgPosition;
+    }
+    caseModal.classList.add('open');document.body.style.overflow='hidden';
+  }
+  function closeCase(){caseModal.classList.remove('open');document.body.style.overflow=''}
+  document.addEventListener('click',e=>{
+    const card=e.target.closest('.case-open');
+    if(card){e.preventDefault();openCase(card.dataset.case);return}
+    if(e.target===caseModal||e.target.closest('#case-close'))closeCase();
+  });
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCase()});
+
   initReveal();

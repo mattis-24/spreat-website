@@ -58,9 +58,14 @@
   <section class="strip">
     <div class="wrap strip-inner reveal">
       <span class="lbl" data-de>Bereits im Einsatz bei</span><span class="lbl" data-en>Already in use at</span>
-      <span class="brand brand-logo brand-freenet" aria-label="freenet">freenet</span>
-      <span class="brand brand-logo"><img src="assets/img/logos/viertelladen.svg" alt="Viertelladen"></span>
-      <span class="brand brand-logo"><img src="assets/img/logos/inkster.svg" alt="Inkster"></span>
+      <span class="brand brand-logo"><img src="assets/img/logos/freenet.png" alt="Freenet" loading="lazy"></span>
+      <span class="brand brand-logo"><img src="assets/img/logos/viertelladen.svg" alt="Viertelladen" loading="lazy"></span>
+      <span class="brand brand-logo"><img src="assets/img/logos/inkster.svg" alt="Inkster" loading="lazy"></span>
+      <span class="brand brand-logo"><img src="assets/img/logos/tado.svg" alt="tado" loading="lazy"></span>
+      <span class="brand brand-logo"><img src="assets/img/logos/pwrgum.svg" alt="pwr gum" loading="lazy"></span>
+      <span class="brand brand-logo"><img src="assets/img/logos/good-news.svg" alt="Good News Magazin" loading="lazy"></span>
+      <span class="brand brand-logo"><img src="assets/img/logos/heiderinder.png" alt="Heiderinder" loading="lazy"></span>
+      <span class="brand brand-logo"><img src="assets/img/logos/stadt-rhede.png" alt="Stadt Rhede" loading="lazy"></span>
       <span class="brand"><span data-de>+ 100 Unternehmen</span><span data-en>+ 100 companies</span></span>
     </div>
   </section>
@@ -126,20 +131,72 @@
     </div>
   </section>
 
-  <!-- Product showcase with real screenshots -->
-  <section class="sec showcase">
+  <!-- Product surfaces: 3 touchpoints -->
+  <section class="sec product-surfaces">
     <div class="wrap">
-      <div class="reveal"><div class="sec-tag" data-de>Das Produkt</div><div class="sec-tag" data-en>The product</div><h2><span data-de>Kein Konzept. Eine Software, die läuft.</span><span data-en>Not a concept. Software that's running.</span></h2></div>
-      <div class="sc-grid">
-        <div class="sc-card reveal">
-          <div class="shot"><img src="assets/kasse.png" alt="Spreat Kasse"></div>
-          <div class="cap"><h3 data-de>Verkaufen an der Kasse</h3><h3 data-en>Sell at the checkout</h3><p data-de>Marken-Produkte wie eigenes Sortiment verkaufen. Spreat erkennt automatisch, wem das Produkt gehört, und rechnet im Hintergrund ab.</p><p data-en>Sell brand products like your own assortment. Spreat automatically detects who owns the product and settles in the background.</p></div>
+      <div class="reveal center"><div class="sec-tag" data-de>Das Produkt</div><div class="sec-tag" data-en>The product</div><h2 style="margin:0 auto"><span data-de>Eine Software. Drei Touchpoints.</span><span data-en>One software. Three touchpoints.</span></h2><p class="lead" style="margin:18px auto 0"><span data-de>Kasse, Backoffice und Markenpool greifen ineinander — alles aus einer Hand, alles aufeinander abgestimmt.</span><span data-en>Checkout, back office and brand pool work together — one system, one source of truth.</span></p></div>
+      <div class="ps-grid">
+        <!-- KASSE -->
+        <div class="ps-card reveal">
+          <div class="ps-frame ps-frame-pos">
+            <div class="ps-frame-bar"><span></span><span></span><span></span></div>
+            <div class="ps-frame-body">
+              <div class="ps-skel sk-pos-header"></div>
+              <div class="ps-skel sk-pos-row"></div>
+              <div class="ps-skel sk-pos-row"></div>
+              <div class="ps-skel sk-pos-row sk-highlight"></div>
+              <div class="ps-skel sk-pos-total"></div>
+            </div>
+          </div>
+          <div class="ps-tag"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l1-5h16l1 5M4 9v11h16V9M4 9h16M9 13h6"/></svg> <span data-de>An der Kasse</span><span data-en>At checkout</span></div>
+          <h3 data-de>Verkaufen wie gewohnt</h3><h3 data-en>Sell like always</h3>
+          <ul class="ps-ul">
+            <li data-de>Marken-Produkte wie eigenes Sortiment scannen</li><li data-en>Scan brand products like your own stock</li>
+            <li data-de>Auto-Erkennung: Wer kassiert was?</li><li data-en>Auto-detection: who's getting paid for what?</li>
+            <li data-de>Standalone-Kasse oder Add-on zur Bestandskasse</li><li data-en>Standalone POS or add-on to your existing till</li>
+          </ul>
         </div>
-        <div class="sc-card reveal" style="transition-delay:.12s">
-          <div class="shot"><img src="assets/dashboard-umsatz.png" alt="Spreat Umsatz-Dashboard"></div>
-          <div class="cap"><h3 data-de>Echtzeit-Insights je Produzent</h3><h3 data-en>Real-time insights per producer</h3><p data-de>Umsatz, Verkäufe und Provision je Marke auf einen Blick. Belege für die Buchhaltung per Klick als CSV.</p><p data-en>Revenue, sales and commission per brand at a glance. Accounting receipts in one click as CSV.</p></div>
+        <!-- BACKOFFICE -->
+        <div class="ps-card reveal" style="transition-delay:.1s">
+          <div class="ps-frame ps-frame-dash">
+            <div class="ps-frame-bar"><span></span><span></span><span></span></div>
+            <div class="ps-frame-body">
+              <div class="ps-kpis"><div class="ps-kpi"><b>12.4k €</b><span>Umsatz</span></div><div class="ps-kpi"><b>284</b><span>Verkäufe</span></div><div class="ps-kpi"><b>32%</b><span>Marge</span></div></div>
+              <div class="ps-chart">
+                <svg viewBox="0 0 200 80" preserveAspectRatio="none"><path d="M0,60 L25,52 L50,55 L75,38 L100,42 L125,28 L150,32 L175,18 L200,22" fill="none" stroke="#4EAF44" stroke-width="2.5"/><path d="M0,60 L25,52 L50,55 L75,38 L100,42 L125,28 L150,32 L175,18 L200,22 L200,80 L0,80 Z" fill="rgba(78,175,68,0.12)"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="ps-tag"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M3 3v18h18M7 14l4-4 4 4 6-6"/></svg> <span data-de>Im Backoffice</span><span data-en>In the back office</span></div>
+          <h3 data-de>Alles auf einen Blick</h3><h3 data-en>Everything at a glance</h3>
+          <ul class="ps-ul">
+            <li data-de>Echtzeit-Umsätze pro Marke und pro Filiale</li><li data-en>Real-time revenue per brand and per store</li>
+            <li data-de>Provisions-Auszahlungen automatisch</li><li data-en>Automatic commission payouts</li>
+            <li data-de>Belege für die Buchhaltung per Klick</li><li data-en>Accounting receipts in one click</li>
+          </ul>
+        </div>
+        <!-- MARKENPOOL -->
+        <div class="ps-card reveal" style="transition-delay:.2s">
+          <div class="ps-frame ps-frame-pool">
+            <div class="ps-frame-bar"><span></span><span></span><span></span></div>
+            <div class="ps-frame-body">
+              <div class="ps-search"></div>
+              <div class="ps-tiles">
+                <div class="ps-tile"></div><div class="ps-tile"></div><div class="ps-tile"></div>
+                <div class="ps-tile"></div><div class="ps-tile"></div><div class="ps-tile"></div>
+              </div>
+            </div>
+          </div>
+          <div class="ps-tag"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg> <span data-de>Im Markenpool</span><span data-en>In the brand pool</span></div>
+          <h3 data-de>Sortiment auf Knopfdruck</h3><h3 data-en>Assortment at your fingertips</h3>
+          <ul class="ps-ul">
+            <li data-de>5.000+ Produkte kuratierter Marken</li><li data-en>5,000+ products from curated brands</li>
+            <li data-de>Eigene Lieferanten in unter 48 Stunden integrieren</li><li data-en>Onboard your own suppliers in under 48 hours</li>
+            <li data-de>Filtern nach Trend, Branche, Region</li><li data-en>Filter by trend, industry, region</li>
+          </ul>
         </div>
       </div>
+      <div class="center reveal" style="margin-top:48px"><a href="https://meetings-eu1.hubspot.com/mattis-kloepper" target="_blank" class="btn btn-primary"><span data-de>Live-Demo buchen</span><span data-en>Book a live demo</span> <span class="btn-arrow">→</span></a></div>
     </div>
   </section>
 
@@ -148,27 +205,27 @@
     <div class="wrap">
       <div class="reveal"><div class="sec-tag" data-de>Aus der Praxis</div><div class="sec-tag" data-en>In practice</div><h2><span data-de>Läuft schon. In echten Läden.</span><span data-en>Already running. In real stores.</span></h2></div>
       <div class="ref-grid">
-        <div class="ref reveal">
+        <div class="ref reveal case-open" data-case="viertelladen">
           <div class="ref-media">
             <div class="ref-tag video">▶ Video</div>
-            <video src="assets/viertelladen-web.mp4" controls loop playsinline preload="metadata" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"></video>
+            <video src="assets/viertelladen-web.mp4" loop muted playsinline preload="metadata" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"></video>
             <div class="ref-ph" style="display:none;position:absolute;inset:0"><div class="pic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div><div class="note" data-de>Video lädt nur mit assets-Ordner oder online</div><div class="note" data-en>Video loads only with assets folder or online</div></div>
           </div>
-          <div class="ref-body"><h3>Viertelladen</h3><p data-de>Inhabergeführter Concept-Store, der seine Produzenten und Künstler ohne Aufwand über Spreat anbindet</p><p data-en>Owner-led concept store onboarding its producers and artists effortlessly via Spreat</p></div>
+          <div class="ref-body"><h3>Viertelladen <span class="ref-more">›</span></h3><p data-de>Inhabergeführter Concept-Store, der seine Produzenten und Künstler ohne Aufwand über Spreat anbindet</p><p data-en>Owner-led concept store onboarding its producers and artists effortlessly via Spreat</p></div>
         </div>
-        <div class="ref reveal" style="transition-delay:.1s">
-          <div class="ref-media ref-media-contain">
+        <div class="ref reveal case-open" style="transition-delay:.1s" data-case="freenet">
+          <div class="ref-media ref-media-top">
             <div class="ref-tag">Case</div>
-            <img src="assets/freenet-creator.jpg" alt="Freenet Creator Picks">
+            <img src="assets/freenet-creator.jpg" alt="Freenet Creator Picks Wand" loading="lazy">
           </div>
-          <div class="ref-body"><h3>Freenet</h3><p data-de>Creator-Picks-Fläche im Franchise-Netz: virale Trendprodukte am Regal, rund 400 Filialen live.</p><p data-en>Creator Picks space in the franchise network: viral trend products on the shelf, around 400 stores live.</p></div>
+          <div class="ref-body"><h3>Freenet <span class="ref-more">›</span></h3><p data-de>Creator-Picks-Fläche im Franchise-Netz: virale Trendprodukte am Regal, rund 400 Filialen live.</p><p data-en>Creator Picks space in the franchise network: viral trend products on the shelf, around 400 stores live.</p></div>
         </div>
-        <div class="ref reveal" style="transition-delay:.2s">
+        <div class="ref reveal case-open" style="transition-delay:.2s" data-case="rhede">
           <div class="ref-media">
             <div class="ref-tag">Pop-up</div>
-            <img src="assets/rhede.jpeg" alt="Pop-up Shop Rhede">
+            <img src="assets/rhede.jpeg" alt="Pop-up Shop Rhede" loading="lazy">
           </div>
-          <div class="ref-body"><h3><span data-de>Stadt Rhede</span><span data-en>City of Rhede</span></h3><p data-de>Pop-up-Shop, der leerstehende Innenstadtfläche mit kuratiertem Sortiment belebt.</p><p data-en>Pop-up store reviving empty downtown space with a curated assortment.</p></div>
+          <div class="ref-body"><h3><span data-de>Stadt Rhede</span><span data-en>City of Rhede</span> <span class="ref-more">›</span></h3><p data-de>Pop-up-Shop, der leerstehende Innenstadtfläche mit kuratiertem Sortiment belebt.</p><p data-en>Pop-up store reviving empty downtown space with a curated assortment.</p></div>
         </div>
       </div>
     </div>
@@ -240,10 +297,10 @@
 
   <section class="cta">
     <div class="wrap cta-inner reveal">
-      <h2><span data-de>Finde deine Marken, die zu deiner Fläche passen — bevor du dich entscheidest</span><span data-en>Find the brands that fit your floor — before you decide</span></h2>
+      <h2><span data-de>Finde deine Marken, die zu deiner Fläche passen</span><span data-en>Find the brands that fit your floor</span></h2>
       <p><span data-de>30 Minuten Call. Wir zeigen dir, was zu dir passt.</span><span data-en>30-minute call. We'll show you what fits.</span></p>
       <div class="cta-buttons"><a href="https://meetings-eu1.hubspot.com/mattis-kloepper" target="_blank" class="btn btn-primary"><span data-de>Termin buchen</span><span data-en>Book a call</span> <span class="btn-arrow">→</span></a><a class="btn btn-outline bp-open" style="cursor:pointer"><span data-de>Spreat Markenpool</span><span data-en>Spreat brand pool</span></a></div>
-      <div class="contact-card"><div class="av">MK</div><div class="ci"><div class="nm">Mattis Klöpper</div><div class="rl">Co-Founder, Spreat GmbH</div></div><a href="mailto:mattis@spreat.com">mattis@spreat.com</a></div>
+      <div class="contact-card"><div class="av">MK</div><div class="ci"><div class="nm">Mattis Klöpper</div><div class="rl">Co-Founder, Spreat GmbH</div></div></div>
     </div>
   </section>
 </main>
@@ -313,7 +370,7 @@
           <div class="uc-ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M3 17l6-6 4 4 8-8M21 7h-5M21 7v5"/></svg></div>
           <h3 data-de>Sortiment dynamisieren</h3><h3 data-en>Dynamize assortment</h3>
           <ul>
-            <li data-de>Trendprodukte sofort am Regal statt nach langen Zyklen</li><li data-en>Trend products on the shelf instantly, not after long cycles</li>
+            <li data-de>Trendprodukte schnell auf die Fläche statt nach Monaten</li><li data-en>Trend products on the floor fast, not months later</li>
             <li data-de>Regionale Marken und Manufakturen einbinden</li><li data-en>Bring in regional brands and local makers</li>
             <li data-de>Komplementär- und Saisonware flexibel testen</li><li data-en>Flexibly test complementary and seasonal goods</li>
           </ul>
@@ -322,14 +379,14 @@
           <div class="uc-ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4zM9 12l2 2 4-4"/></svg></div>
           <h3 data-de>Risiko & Aufwand senken</h3><h3 data-en>Cut risk & effort</h3>
           <ul>
-            <li data-de>Kein Wareneinkauf, kein Lager, kein Kapital gebunden</li><li data-en>No buying, no warehouse, no capital locked</li>
+            <li data-de>Kein Wareneinkauf, kein Kapital gebunden</li><li data-en>No buying, no capital locked</li>
             <li data-de>95% weniger buchhalterischer Aufwand</li><li data-en>95% less accounting effort</li>
             <li data-de>Rechtssichere Abwicklung im Namen der Marke</li><li data-en>Legally sound processing in the brand's name</li>
           </ul>
         </div>
         <div class="uc reveal" style="transition-delay:.2s">
           <div class="uc-ic"><svg fill="none" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M2 12h20M12 3a14 14 0 010 18M12 3a14 14 0 000 18"/></svg></div>
-          <h3 data-de>Online & stationär verbinden <span class="badge">ROADMAP</span></h3><h3 data-en>Connect online & offline <span class="badge">ROADMAP</span></h3>
+          <h3 data-de>Online & stationär verbinden</h3><h3 data-en>Connect online & offline</h3>
           <ul>
             <li data-de>Online-Marktplatz-Produkte stationär anbieten</li><li data-en>Offer online-marketplace products in store</li>
             <li data-de>Cross-Selling am POS</li><li data-en>Cross-selling at the POS</li>
@@ -343,7 +400,7 @@
   <!-- Two ways to fill the floor (Ochsner logic) -->
   <section class="sec">
     <div class="wrap">
-      <div class="reveal"><div class="sec-tag" data-de>Zwei Wege</div><div class="sec-tag" data-en>Two ways</div><h2><span data-de>Du entscheidest, wie du deine Fläche bestückst.</span><span data-en>You decide how you stock your floor.</span></h2><p class="lead"><span data-de>Beides geht parallel, jederzeit kombinierbar.</span><span data-en>Both work in parallel, combine them anytime.</span></p></div>
+      <div class="reveal"><div class="sec-tag" data-de>Produzenten</div><div class="sec-tag" data-en>Producers</div><h2><span data-de>Du kuratierst deine Fläche selber.</span><span data-en>You curate your floor yourself.</span></h2><p class="lead"><span data-de>Beides geht parallel, jederzeit kombinierbar.</span><span data-en>Both work in parallel, combine them anytime.</span></p></div>
       <div class="ways">
         <div class="way a reveal">
           <span class="plus">+</span>
@@ -373,26 +430,30 @@
     </div>
   </section>
 
-  <section class="sec problem" style="background:var(--cream);color:var(--navy)">
+  <section class="sec pricing-clean" style="background:var(--cream);color:var(--navy)">
     <div class="wrap">
-      <div class="center reveal"><div class="sec-tag">Pricing</div><h2 style="margin:0 auto;color:var(--navy)"><span data-de>2% Provision. Sonst nichts.</span><span data-en>2% commission. Nothing else.</span></h2></div>
-      <div class="price-grid">
-        <div class="price-main reveal">
-          <div class="huge"><span>2%</span></div>
-          <div class="sub"><span data-de>auf das, was deine Spreat-Produkte umsetzen</span><span data-en>on what your Spreat products turn over</span></div>
-          <ul class="checks">
-            <li><span class="ck"><svg fill="none" viewBox="0 0 24 24" stroke="#fff"><path d="M5 13l4 4L19 7"/></svg></span><span data-de>Keine Setup-Gebühr</span><span data-en>No setup fee</span></li>
-            <li><span class="ck"><svg fill="none" viewBox="0 0 24 24" stroke="#fff"><path d="M5 13l4 4L19 7"/></svg></span><span data-de>Kein Monatsfix</span><span data-en>No monthly fixed cost</span></li>
-            <li><span class="ck"><svg fill="none" viewBox="0 0 24 24" stroke="#fff"><path d="M5 13l4 4L19 7"/></svg></span><span data-de>Keine Mindestabnahme</span><span data-en>No minimum order</span></li>
-          </ul>
-          <p class="note"><span data-de>Du zahlst 2% auf den über Spreat generierten Umsatz, plus Payment-Gebühren. Wir verdienen nur, wenn du verdienst.</span><span data-en>You pay 2% on revenue via Spreat, plus payment fees. We only earn when you earn.</span></p>
+      <div class="center reveal"><div class="sec-tag">Pricing</div><h2 style="margin:0 auto;color:var(--navy)"><span data-de>Faires Pricing. Keine Überraschungen.</span><span data-en>Fair pricing. No surprises.</span></h2></div>
+      <div class="pc-grid">
+        <div class="pc-card pc-main reveal">
+          <div class="pc-num"><span>2</span>%</div>
+          <div class="pc-lbl"><span data-de>Plattform-Gebühr</span><span data-en>Platform fee</span></div>
+          <div class="pc-desc"><span data-de>auf das, was über Spreat verkauft wird</span><span data-en>on whatever sells via Spreat</span></div>
         </div>
-        <div class="price-side reveal" style="transition-delay:.12s;background:#fff">
-          <div class="tag" data-de>So fängst du an</div><div class="tag" data-en>How to start</div>
-          <div class="big"><span>30</span> Min</div>
-          <p data-de>Ein kurzer Call genügt. Wir schauen gemeinsam, welche Marken zu deiner Fläche passen, und du startest ohne Risiko.</p>
-          <p data-en>One short call is enough. We find the brands that fit your floor, and you start with zero risk.</p>
+        <div class="pc-card reveal" style="transition-delay:.08s">
+          <div class="pc-num"><span>500</span> €<sup>*</sup></div>
+          <div class="pc-lbl"><span data-de>Setup-Gebühr</span><span data-en>Setup fee</span></div>
+          <div class="pc-desc"><span data-de><sup>*</sup>pro Zahlungsterminal — einmalig</span><span data-en><sup>*</sup>per payment terminal — one-off</span></div>
         </div>
+        <div class="pc-card reveal" style="transition-delay:.16s">
+          <div class="pc-num"><span>0</span> €</div>
+          <div class="pc-lbl"><span data-de>Monatsgebühr</span><span data-en>Monthly fee</span></div>
+          <div class="pc-desc"><span data-de>Keine Fixkosten, keine Mindestabnahme</span><span data-en>No fixed costs, no minimum order</span></div>
+        </div>
+      </div>
+      <div class="winwinwin reveal" style="transition-delay:.24s">
+        <div class="www-tag" data-de>Win · Win · Win</div><div class="www-tag" data-en>Win · Win · Win</div>
+        <p data-de>Die Marke verdient, wenn du verdienst — und erst dann verdienen auch wir.</p>
+        <p data-en>The brand earns when you earn — and only then do we earn too.</p>
       </div>
     </div>
   </section>
@@ -516,10 +577,21 @@
   <!-- Founders -->
   <section class="sec">
     <div class="wrap">
-      <div class="reveal"><div class="sec-tag" data-de>Gründer</div><div class="sec-tag" data-en>Founders</div><h2><span data-de>Zwei Gründer, ein Ziel.</span><span data-en>Two founders, one mission.</span></h2></div>
+      <div class="reveal"><div class="sec-tag" data-de>Gründer & Team</div><div class="sec-tag" data-en>Founders & team</div><h2><span data-de>Die Köpfe hinter Spreat.</span><span data-en>The people behind Spreat.</span></h2></div>
       <div style="margin-top:54px">
         <div class="founder reveal">
-          <div class="f-photo"><img src="assets/img/mattis-founder.jpg" alt="Mattis Klöpper"></div>
+          <div class="f-photo"><img src="assets/img/paul-founder.jpg" alt="Paul Kirchbichler" loading="lazy"></div>
+          <div class="f-info">
+            <div class="f-role" data-de>Co-Founder · Technologie & Produkt</div><div class="f-role" data-en>Co-Founder · Technology & Product</div>
+            <h3>Paul Kirchbichler</h3>
+            <p data-de>Paul ist das technologische Rückgrat von Spreat. Als IT-Experte und Tech-Founder vereint er tiefes technisches Know-how mit langjähriger Erfahrung im Bereich Online-Marktplätze. Mit 16 Jahren hat Paul bereits sein erstes Startup gegründet und ist damit einer der jüngsten Gründer Deutschlands.</p>
+            <p data-en>Paul is the technological backbone of Spreat. As an IT expert and tech founder, he combines deep technical know-how with years of experience in online marketplaces. Paul founded his first startup at 16, making him one of Germany's youngest founders.</p>
+            <div class="f-badge"><span class="tr">★</span> <span data-de>Erstes Startup mit 16 Jahren</span><span data-en>First startup at age 16</span></div>
+            <div class="f-links"><a href="mailto:paul@spreat.com">E-Mail</a><a href="https://www.linkedin.com/in/paul-kirchbichler/" target="_blank">LinkedIn</a></div>
+          </div>
+        </div>
+        <div class="founder reveal">
+          <div class="f-photo"><img src="assets/img/mattis-founder.jpg" alt="Mattis Klöpper" loading="lazy"></div>
           <div class="f-info">
             <div class="f-role" data-de>Co-Founder · Sales & Geschäftsentwicklung</div><div class="f-role" data-en>Co-Founder · Sales & Business Development</div>
             <h3>Mattis Klöpper</h3>
@@ -530,42 +602,15 @@
           </div>
         </div>
         <div class="founder reveal">
-          <div class="f-photo"><img src="assets/img/paul-founder.jpg" alt="Paul Kirchbichler"></div>
+          <div class="f-photo"><img src="https://cdn.prod.website-files.com/69370f2f7bc3196ca1fc4879/696516fc628372ce4025ed39_Heinz-Peter%20H%C3%B6lscher.avif" alt="Heinz-Peter Hölscher" loading="lazy"></div>
           <div class="f-info">
-            <div class="f-role" data-de>Co-Founder · Technologie & Produkt</div><div class="f-role" data-en>Co-Founder · Technology & Product</div>
-            <h3>Paul Kirchbichler</h3>
-            <p data-de>Paul ist das technologische Rückgrat von Spreat. Als IT-Experte und Tech-Founder vereint er tiefes technisches Know-how mit langjähriger Erfahrung im Bereich Online-Marktplätze. Mit 16 Jahren hat Paul bereits sein erstes Startup gegründet und ist damit einer der jüngsten Gründer Deutschlands.</p>
-            <p data-en>Paul is the technological backbone of Spreat. As an IT expert and tech founder, he combines deep technical know-how with years of experience in online marketplaces. Paul founded his first startup at 16, making him one of Germany's youngest founders.</p>
-            <div class="f-badge"><span class="tr">★</span> <span data-de>Erstes Startup mit 16 Jahren</span><span data-en>First startup at age 16</span></div>
-            <div class="f-links"><a href="mailto:paul@spreat.com">E-Mail</a><a href="https://www.linkedin.com/in/paul-kirchbichler/" target="_blank">LinkedIn</a></div>
+            <div class="f-role" data-de>Business Development · Operative Exzellenz</div><div class="f-role" data-en>Business Development · Operational Excellence</div>
+            <h3>Heinz-Peter Hölscher</h3>
+            <p data-de>Heinz-Peter bringt jahrzehntelange Erfahrung aus dem Einzelhandel und der Geschäftsentwicklung mit zu Spreat. Sein tiefes Verständnis für die operativen Realitäten des stationären Handels macht ihn zum Bindeglied zwischen Spreat und den Filialnetzen unserer Partner.</p>
+            <p data-en>Heinz-Peter brings decades of retail and business-development experience to Spreat. His deep understanding of the operational reality of physical retail makes him the bridge between Spreat and our partners' store networks.</p>
+            <div class="f-badge"><span class="tr">★</span> <span data-de>Brücke zwischen Spreat und Handel</span><span data-en>Bridge between Spreat and retail</span></div>
+            <div class="f-links"><a href="mailto:heinz-peter@spreat.com">E-Mail</a><a href="https://www.linkedin.com/in/heinz-peter-h%C3%B6lscher" target="_blank">LinkedIn</a></div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Full team -->
-  <section class="sec pillars">
-    <div class="wrap">
-      <div class="center reveal"><div class="sec-tag" data-de>Team</div><div class="sec-tag" data-en>Team</div><h2 style="margin:0 auto"><span data-de>Das Team dahinter.</span><span data-en>The team behind it.</span></h2></div>
-      <div class="team-grid">
-        <div class="tm reveal">
-          <img src="assets/img/mattis.jpg" alt="Mattis Klöpper">
-          <h3>Mattis Klöpper</h3>
-          <div class="role" data-de>Co-Founder · Sales & Business Development</div><div class="role" data-en>Co-Founder · Sales & Business Development</div>
-          <div class="links"><a href="mailto:mattis@spreat.com">E-Mail</a><a href="https://www.linkedin.com/in/mattis-kloepper/" target="_blank">LinkedIn</a></div>
-        </div>
-        <div class="tm reveal" style="transition-delay:.1s">
-          <img src="assets/img/paul.jpg" alt="Paul Kirchbichler">
-          <h3>Paul Kirchbichler</h3>
-          <div class="role" data-de>Co-Founder · Technologie & Produkt</div><div class="role" data-en>Co-Founder · Technology & Product</div>
-          <div class="links"><a href="mailto:paul@spreat.com">E-Mail</a><a href="https://www.linkedin.com/in/paul-kirchbichler/" target="_blank">LinkedIn</a></div>
-        </div>
-        <div class="tm reveal" style="transition-delay:.2s">
-          <img src="https://cdn.prod.website-files.com/69370f2f7bc3196ca1fc4879/696516fc628372ce4025ed39_Heinz-Peter%20H%C3%B6lscher.avif" alt="Heinz-Peter Hölscher">
-          <h3>Heinz-Peter Hölscher</h3>
-          <div class="role" data-de>Business Development · operative Exzellenz</div><div class="role" data-en>Business Development · operational excellence</div>
-          <div class="links"><a href="mailto:heinz-peter@spreat.com">E-Mail</a><a href="https://www.linkedin.com/in/heinz-peter-h%C3%B6lscher" target="_blank">LinkedIn</a></div>
         </div>
       </div>
     </div>
@@ -591,10 +636,70 @@
       <h2><span data-de>Lust, gemeinsam Handel neu zu denken?</span><span data-en>Want to reinvent retail with us?</span></h2>
       <p><span data-de>Ob als Händler, Marke oder Partner. Lass uns kurz sprechen.</span><span data-en>As a retailer, brand or partner. Let's have a quick chat.</span></p>
       <div class="cta-buttons"><a href="https://meetings-eu1.hubspot.com/mattis-kloepper" target="_blank" class="btn btn-primary"><span data-de>Termin buchen</span><span data-en>Book a call</span> <span class="btn-arrow">→</span></a></div>
-      <div class="contact-card"><div class="av">MK</div><div class="ci"><div class="nm">Mattis Klöpper</div><div class="rl">Co-Founder, Spreat GmbH</div></div><a href="mailto:mattis@spreat.com">mattis@spreat.com</a></div>
+      <div class="contact-card"><div class="av">MK</div><div class="ci"><div class="nm">Mattis Klöpper</div><div class="rl">Co-Founder, Spreat GmbH</div></div></div>
     </div>
   </section>
 </main>
+
+<!-- ===== Case detail modal ===== -->
+<div class="modal-overlay" id="case-modal">
+  <div class="modal-box case-modal-box">
+    <button class="modal-close" id="case-close" aria-label="close">&times;</button>
+    <div class="case-detail" id="case-detail-content"></div>
+  </div>
+</div>
+
+<!-- Case data (hidden, used by JS) -->
+<div id="case-data" style="display:none">
+  <div data-case-id="viertelladen">
+    <div class="case-hero" data-bg="assets/img/concept-store.jpg"></div>
+    <div class="case-body">
+      <span class="case-eyebrow" data-de>Concept Store · Aachen</span><span class="case-eyebrow" data-en>Concept Store · Aachen</span>
+      <h3>Viertelladen</h3>
+      <p data-de>Der Viertelladen ist ein inhabergeführter Concept-Store, der Produkte regionaler Manufakturen und Künstler verkauft. Über Spreat bindet der Laden seine Lieferanten in unter 48 Stunden an, ohne Wareneinkauf vorzufinanzieren.</p>
+      <p data-en>Viertelladen is an owner-led concept store selling products from regional makers and artists. Via Spreat, the store onboards its suppliers in under 48 hours — without pre-financing any stock.</p>
+      <ul class="case-kpis">
+        <li><b data-de>0 €</b><b data-en>0 €</b><span data-de>vorfinanziertes Sortiment</span><span data-en>pre-financed assortment</span></li>
+        <li><b data-de>&lt; 48 h</b><b data-en>&lt; 48 h</b><span data-de>Onboarding pro Marke</span><span data-en>onboarding per brand</span></li>
+        <li><b data-de>95 %</b><b data-en>95 %</b><span data-de>weniger Buchhaltung</span><span data-en>less accounting</span></li>
+      </ul>
+      <p data-de>Die Inhaber behalten volle Kontrolle über Sortiment und Margen. Spreat übernimmt Bestellprozess, Rechnungsstellung und Provisionsauszahlung im Hintergrund.</p>
+      <p data-en>The owners keep full control over assortment and margins. Spreat handles ordering, invoicing and commission payouts in the background.</p>
+    </div>
+  </div>
+  <div data-case-id="freenet">
+    <div class="case-hero" data-bg="assets/freenet-creator.jpg" data-bg-position="top"></div>
+    <div class="case-body">
+      <span class="case-eyebrow" data-de>Franchise-Netzwerk · 400 Filialen</span><span class="case-eyebrow" data-en>Franchise network · 400 stores</span>
+      <h3>Freenet — Creator Picks</h3>
+      <p data-de>freenet hat über Spreat eine Creator-Picks-Fläche im Franchise-Netz ausgerollt. Virale Trendprodukte verschiedener Marken werden sichtbar am POS platziert — ohne dass die Filialen das Sortiment einkaufen müssen.</p>
+      <p data-en>freenet rolled out a Creator Picks space across its franchise network via Spreat. Viral trend products from various brands sit visibly at the POS — without the stores having to buy any stock.</p>
+      <ul class="case-kpis">
+        <li><b data-de>~ 400</b><b data-en>~ 400</b><span data-de>Filialen live</span><span data-en>stores live</span></li>
+        <li><b data-de>0 €</b><b data-en>0 €</b><span data-de>Wareneinkauf für Filialen</span><span data-en>buying cost for stores</span></li>
+        <li><b data-de>1 System</b><b data-en>1 system</b><span data-de>für alle Marken</span><span data-en>for all brands</span></li>
+      </ul>
+      <p data-de>Spreat verbindet alle teilnehmenden Marken mit dem Filialnetz und übernimmt die komplette Abwicklung pro Verkauf — von der Order über die Rechnung bis zur Auszahlung.</p>
+      <p data-en>Spreat connects all participating brands with the store network and handles the entire processing per sale — from order to invoice to payout.</p>
+    </div>
+  </div>
+  <div data-case-id="rhede">
+    <div class="case-hero" data-bg="assets/rhede.jpeg"></div>
+    <div class="case-body">
+      <span class="case-eyebrow" data-de>Pop-up · Stadt Rhede</span><span class="case-eyebrow" data-en>Pop-up · City of Rhede</span>
+      <h3 data-de>Stadt Rhede — Pop-up Shop</h3><h3 data-en>City of Rhede — Pop-up Shop</h3>
+      <p data-de>Die Stadt Rhede hat über Spreat einen Pop-up-Shop in leerstehender Innenstadtfläche eröffnet. Kuratiertes Sortiment regionaler und überregionaler Marken — alles ohne Wareneinkauf, ohne Risiko für die Kommune.</p>
+      <p data-en>The City of Rhede opened a pop-up store in a vacant downtown space via Spreat. Curated assortment from regional and national brands — all without any buying, no risk for the city.</p>
+      <ul class="case-kpis">
+        <li><b data-de>1</b><b data-en>1</b><span data-de>belebte Leerstands-Fläche</span><span data-en>revived empty space</span></li>
+        <li><b data-de>0 €</b><b data-en>0 €</b><span data-de>kommunales Warenrisiko</span><span data-en>municipal stock risk</span></li>
+        <li><b data-de>30+</b><b data-en>30+</b><span data-de>Marken im Sortiment</span><span data-en>brands in the assortment</span></li>
+      </ul>
+      <p data-de>Ein Pilotprojekt, das zeigt, wie Spreat Stadtentwicklung und stationären Handel verbindet — und wie Innenstadtbelebung ohne Subventionen funktioniert.</p>
+      <p data-en>A pilot project showing how Spreat connects urban development and physical retail — and how downtown revitalization works without subsidies.</p>
+    </div>
+  </div>
+</div>
 
 <!-- ===== Markenpool request modal ===== -->
 <div class="modal-overlay" id="bp-modal">
